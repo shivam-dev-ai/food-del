@@ -45,9 +45,9 @@ function Placeorder() {
 
     // ✅ Prepare order data
     const orderData = {
-      userId: "6891c9f677752ac1e9117bf3", // replace with logged-in user ID
-      items: cartItems, // assuming you have cart items in context
-      amount: getTotalCartAmount() + 2, // Total amount
+      userId: "6891c9f677752ac1e9117bf3", 
+      items: cartItems, 
+      amount: getTotalCartAmount() + 2, 
       address: {
         street: formData.street,
         city: formData.city,
@@ -57,7 +57,7 @@ function Placeorder() {
     };
 
     // ✅ Create Razorpay order from backend
-    const response = await fetch("http://localhost:4000/api/order/place", {
+    const response = await fetch("https://food-del-backend-kryb.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ function Placeorder() {
       handler: async function (response) {
         // ✅ Verify payment
         const verifyRes = await fetch(
-          "http://localhost:4000/api/order/verify",
+          "https://food-del-backend-kryb.onrender.com",
           {
             method: "POST",
             headers: {
