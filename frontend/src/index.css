@@ -1,0 +1,40 @@
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track (background) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4cafef; /* Scroll thumb */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e90ff; /* Thumb color on hover */
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

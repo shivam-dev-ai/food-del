@@ -1,0 +1,110 @@
+.orders-container {
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+  width: 84%;
+  margin-left: 5%; /* match sidebar width */
+  box-sizing: border-box;
+}
+
+.orders-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+/* Table wrapper for scroll */
+.orders-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Actual table styling */
+.orders-table {
+  width: 100%;
+  min-width: 1100px; /* force horizontal scroll on small view */
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 10px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.orders-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #555;
+}
+
+.status.paid {
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  color: tomato;
+}
+
+.status.pending {
+  color: #f44336;
+
+  padding: 4px 8px;
+
+  font-size: 13px;
+}
+
+.status.unpaid {
+  background-color: #f44336;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .orders-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.export-btn {
+  background-color: tomato;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.export-btn:hover {
+  background-color: #e5533c;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
