@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { CSVLink } from "react-csv";
 
 function Orders() {
-  const url = "http://localhost:4000";
+  const url = "https://food-del-backend-kryb.onrender.com";
   const [orders, setOrders] = useState([]);
 
   const ordersList = async () => {
